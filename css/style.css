@@ -629,6 +629,25 @@ body {
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.store-card-icon {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-card-icon img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  display: block;
 }
 
 .store-featured {
