@@ -1,0 +1,32 @@
+@echo off
+cd /d "%~dp0"
+if exist "C:\Program Files\GitHub CLI\gh.exe" set "PATH=C:\Program Files\GitHub CLI;%PATH%"
+if exist "C:\Program Files\Git\cmd\git.exe" set "PATH=C:\Program Files\Git\cmd;%PATH%"
+echo.
+echo Rex SMP website deploy - rexsmp.com
+echo.
+where gh >nul 2>&1
+if errorlevel 1 (
+  echo GitHub CLI not found. Run: winget install GitHub.cli
+  pause
+  exit /b 1
+)
+where git >nul 2>&1
+if errorlevel 1 (
+  echo Git is not installed. Run: winget install Git.Git
+  echo After install, close this window and run DEPLOY-NOW.bat again.
+  pause
+  exit /b 1
+)
+gh auth status >nul 2>&1
+if errorlevel 1 (
+  echo Not logged in. Running gh auth login now...
+  gh auth login
+)
+echo.
+for /f %%i in ('gh api user -q .login') do set GHUSER=%%i
+echo Logged in as: %GHUSER%
+echo.
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0deploy.ps1"
+echo.
+pause
