@@ -197,10 +197,19 @@ body {
 
 .ip-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1.15rem 1.5rem;
+  text-align: center;
+}
+
+.ip-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .ip-divider {
@@ -215,15 +224,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--grey-500);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 .ip-value {
   display: block;
   font-family: ui-monospace, monospace;
-  font-size: clamp(0.78rem, 2.5vw, 0.9rem);
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
   color: var(--grey-300);
-  word-break: break-all;
+  line-height: 1.4;
 }
 
 .copy-btn {
@@ -805,7 +814,7 @@ body {
   .nav-links a { padding: 0.75rem 2rem; width: 100%; }
   .nav-discord { margin: 0.5rem 2rem 0; text-align: center; }
   .nav-toggle { display: flex; }
-  .ip-row { flex-direction: column; align-items: stretch; }
+  .ip-row { align-items: center; }
   .copy-btn { justify-content: center; }
   .discord-inner { flex-direction: column; text-align: center; }
 }
