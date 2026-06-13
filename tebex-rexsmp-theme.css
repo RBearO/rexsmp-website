@@ -391,3 +391,56 @@ header ~ .container .categories,
   line-height: 1.6;
   margin-top: 0.5rem;
 }
+
+/* RexShards tier icons — paste marker in RexShards category description (see TEBEX-REXSHARDS-ICONS.txt) */
+body:has(.rex-shard-tier-icons) .store-product:nth-child(1) .image img,
+body:has(.rex-shard-tier-icons) .product:nth-child(1) .image img,
+body:has(.rex-shard-tier-icons) .package:nth-child(1) .package-image img,
+body:has(.rex-shard-tier-icons) .category-package:nth-child(1) img {
+  content: url("https://rexsmp.com/img/store/packages/rexshards-x1.png?v=21") !important;
+  object-fit: contain !important;
+}
+
+body:has(.rex-shard-tier-icons) .store-product:nth-child(2) .image img,
+body:has(.rex-shard-tier-icons) .product:nth-child(2) .image img,
+body:has(.rex-shard-tier-icons) .package:nth-child(2) .package-image img,
+body:has(.rex-shard-tier-icons) .category-package:nth-child(2) img {
+  content: url("https://rexsmp.com/img/store/packages/rexshards-x2.png?v=21") !important;
+  object-fit: contain !important;
+}
+
+body:has(.rex-shard-tier-icons) .store-product:nth-child(3) .image img,
+body:has(.rex-shard-tier-icons) .product:nth-child(3) .image img,
+body:has(.rex-shard-tier-icons) .package:nth-child(3) .package-image img,
+body:has(.rex-shard-tier-icons) .category-package:nth-child(3) img {
+  content: url("https://rexsmp.com/img/store/packages/rexshards-x3.png?v=21") !important;
+  object-fit: contain !important;
+}
+
+body:has(.rex-shard-tier-icons) .store-product:nth-child(4) .image img,
+body:has(.rex-shard-tier-icons) .product:nth-child(4) .image img,
+body:has(.rex-shard-tier-icons) .package:nth-child(4) .package-image img,
+body:has(.rex-shard-tier-icons) .category-package:nth-child(4) img {
+  content: url("https://rexsmp.com/img/store/packages/rexshards-x4.png?v=21") !important;
+  object-fit: contain !important;
+}
+
+body:has(.rex-shard-tier-icons) .store-product:nth-child(5) .image img,
+body:has(.rex-shard-tier-icons) .product:nth-child(5) .image img,
+body:has(.rex-shard-tier-icons) .package:nth-child(5) .package-image img,
+body:has(.rex-shard-tier-icons) .category-package:nth-child(5) img {
+  content: url("https://rexsmp.com/img/store/packages/rexshards-x5.png?v=21") !important;
+  object-fit: contain !important;
+}
+
+body:has(.rex-shard-tier-icons) .store-product .image img,
+body:has(.rex-shard-tier-icons) .product .image img,
+body:has(.rex-shard-tier-icons) .package .package-image img,
+body:has(.rex-shard-tier-icons) .category-package img {
+  width: 100% !important;
+  max-width: 180px !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  background: transparent !important;
+}
