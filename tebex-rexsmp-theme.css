@@ -268,7 +268,22 @@ aside,
   align-self: flex-start !important;
 }
 
-/* YELLOW: hide default homepage category row (white box icons) */
+/* YELLOW: hide default homepage category row (white box icons under logo)
+   PRIMARY FIX: Tebex → Appearance → Edit Exo → Template Options
+   → Navigation Style → "Vertical Nav in Sidebar" → Save & Publish
+*/
+.navigation-horizontal,
+.store-header .navigation,
+header + .navigation,
+.site-header-nav,
+.category-header-nav,
+.store-navigation-wrapper,
+.nav.categories,
+ul.nav-categories,
+.categories-row,
+.category-links,
+section.navigation,
+.site-navigation,
 .store-categories,
 .home-categories,
 .category-list-horizontal,
@@ -289,16 +304,19 @@ aside,
 .site-content > .container > .row.categories,
 .site-content > .categories,
 header ~ .container .categories,
-.site-content .category-list:not(.rex-store-home) {
-  display: none !important;
-}
-
-/* Hide Exo index category tile row (3 box icons under logo) */
+.site-content .category-list:not(.rex-store-home),
 .site-content > .container > .row:first-child:not(:has(.rex-store-home)),
 .site-content .store-categories-row,
 .site-content .navigation-horizontal,
 .panel-body + .category-list {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
 }
 
 /* BLUE: Rex category buttons inside Home page content */
@@ -341,11 +359,11 @@ header ~ .container .categories,
   width: 64px;
   height: 64px;
   border-radius: 8px;
-  background: transparent;
+  background: transparent !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .rex-store-home .rex-cat-img {
@@ -355,6 +373,9 @@ header ~ .container .categories,
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .rex-home-copy {
