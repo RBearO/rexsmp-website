@@ -1,0 +1,54 @@
+TEBEX HOME PAGE — FIX (read this first)
+======================================
+
+PROBLEM: You see <div class="rex-store-home"> as text on the page.
+CAUSE: HTML was pasted in visual mode, OR duplicate Home pages.
+
+STEP 1 — REMOVE DUPLICATE HOME
+------------------------------
+Webstore → Pages
+- If you see TWO "Home" pages, delete the newest one OR edit it:
+  tick "Do Not Add to Menu" and Disable This Page
+- Keep only ONE Home page
+
+STEP 2 — CLEAR BROKEN CONTENT
+-----------------------------
+Webstore → Pages → Edit Home
+- Select ALL in the editor → Delete
+
+STEP 3 — USE CODE VIEW (required for HTML)
+------------------------------------------
+1. Click the </> button (Code View) in the toolbar
+2. ONLY NOW paste from tebex-home-paste-this.html
+3. Save while still in Code View
+
+STEP 4 — IF HTML STILL SHOWS AS TEXT (Tebex Plus only)
+------------------------------------------------------
+Appearance → Change Template → Create Custom Template (base: Exo)
+Open file: cms/page.html
+Find: {{ metaData.content }}
+Change to: {{ metaData.content|raw }}
+Save and Publish template
+
+STEP 5 — EASIER OPTION (no HTML, works for everyone)
+----------------------------------------------------
+Skip HTML entirely. In the visual editor (NOT code view), type:
+
+Welcome to Rex SMP!
+
+Then add three lines and highlight each → link button:
+  RexShards  →  /category/rexshards
+  Ranks      →  /category/ranks
+  Crates     →  /category/crates
+
+Add below:
+Server: rexsmp.com
+Website: https://rexsmp.com
+
+Save.
+
+NOTE ABOUT YELLOW ICONS AT TOP
+------------------------------
+Those are on the main store homepage (index), not your custom page.
+Hiding them needs tebex-rexsmp-theme.css in your custom theme (Tebex Plus).
+Your sidebar links (RexShards, Ranks, Crates) already work — use those for now.

@@ -1,0 +1,93 @@
+REX SMP — TEBEX THEME SETUP (match rexsmp.com)
+==============================================
+
+The ranks page (and whole store) is styled in Tebex, not on GitHub Pages.
+Use the CSS file: tebex-rexsmp-theme.css
+
+REQUIREMENTS
+------------
+- Tebex Plus plan (needed for custom themes)
+- Team access to rex-smp.tebex.io store
+
+STEP 1 — TEMPLATE
+-----------------
+1. creator.tebex.io → Webstore → Appearance
+2. Change Template → Exo → Activate
+
+STEP 2 — CUSTOM THEME
+---------------------
+1. Appearance → Change Theme → Create Custom Theme
+2. Name: Rex SMP
+3. Open tebex-rexsmp-theme.css from this folder
+4. Copy ALL of it → paste into Tebex CSS editor
+5. Save → Activate
+6. Click Edit on the theme → Save & Publish (top right)
+
+STEP 3 — LOGO & BRANDING
+------------------------
+Appearance (same page):
+- Logo: upload Rex SMP logo (same as rexsmp.com, PNG, min 500px wide)
+- Favicon: small Rex logo for browser tab
+
+STEP 4 — SIDEBAR (optional but recommended)
+-------------------------------------------
+Webstore → Sidebar → add blocks:
+- Server: Java rexsmp.com · Bedrock rexsmp.com | 25691
+- Website: https://rexsmp.com
+- Discord: your invite link
+
+STEP 5 — TEST
+-------------
+Open in private/incognito window:
+  https://rex-smp.tebex.io/category/ranks
+
+Should look dark with red buttons like rexsmp.com.
+
+IF COLORS DON'T CHANGE
+----------------------
+- Confirm Rex SMP theme is Activated (not Space/default)
+- Edit theme → Save & Publish again
+- Hard refresh: Ctrl + F5
+- Some premium templates override CSS — switch back to Exo
+
+FREE PLAN (no Plus)?
+--------------------
+Appearance → Change Theme → activate "Space" (dark)
+Upload logo under Appearance → Branding
+Full rexsmp.com match needs Plus + custom CSS above.
+
+
+LAYOUT — SIDEBAR UP + CATEGORIES IN MAIN CONTENT
+------------------------------------------------
+See TEBEX-HOME-PAGE-HTML.txt for the Home page HTML block.
+
+STEP A — Update theme CSS
+1. Edit your Rex SMP custom theme in Tebex
+2. Re-copy ALL of tebex-rexsmp-theme.css (includes new layout section)
+3. Save & Publish
+
+STEP B — Move yellow category icons into blue content area
+1. Webstore → Pages → Edit "Home" (or your landing page)
+2. Delete the default placeholder text if you want
+3. Paste the HTML from TEBEX-HOME-PAGE-HTML.txt at the top
+4. Save
+
+The CSS hides Tebex's default category row (yellow) and shows your
+new buttons inside the page content (blue).
+
+STEP C — Move green sidebar up
+1. Webstore → Appearance → Edit Exo template → Template Options
+2. Keep: Navigation Style = "Vertical Nav in Sidebar"
+3. Save & Publish on template
+4. Layout CSS in tebex-rexsmp-theme.css pulls sidebar to the top
+
+STEP D — Replace "Modules" placeholder in sidebar
+1. Webstore → Sidebar
+2. Add modules: Server Status, Text Box (rexsmp.com + Discord), etc.
+3. Remove or reorder empty placeholder modules
+
+STEP E — If yellow row still shows
+1. On the store page, right-click the RexShards/Ranks/Crates icons → Inspect
+2. Note the class name on that element
+3. Add to tebex-rexsmp-theme.css under the YELLOW hide section:
+   .that-class-name { display: none !important; }

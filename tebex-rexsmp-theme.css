@@ -1,0 +1,364 @@
+/*
+  Rex SMP — Tebex custom theme
+  Matches https://rexsmp.com colors and feel.
+
+  How to use:
+  1. Tebex → Webstore → Appearance → Change Theme → Create Custom Theme
+  2. Name: Rex SMP
+  3. Paste this entire file → Save → Activate → Save & Publish
+  4. Also set Logo + Exo template under Appearance (see TEBEX-THEME-SETUP.txt)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --rex-bg: #0a0a0a;
+  --rex-card: #141414;
+  --rex-card-hover: #1a1a1a;
+  --rex-text: #f5f5f5;
+  --rex-muted: #737373;
+  --rex-border: rgba(255, 255, 255, 0.08);
+  --rex-red: #dc2626;
+  --rex-red-light: #ef4444;
+  --rex-red-dark: #991b1b;
+  --rex-red-dim: rgba(220, 38, 38, 0.12);
+  --rex-radius: 12px;
+}
+
+/* Base */
+html,
+body,
+.site,
+.site-content,
+.store,
+.store-content,
+.page-content,
+main {
+  background: var(--rex-bg) !important;
+  color: var(--rex-text) !important;
+  font-family: "Inter", system-ui, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.store-name,
+.category-name,
+.page-title {
+  color: var(--rex-text) !important;
+  font-family: "Bebas Neue", Impact, sans-serif !important;
+  letter-spacing: 0.04em !important;
+}
+
+p,
+li,
+small,
+.text-muted,
+.description,
+.category-description {
+  color: #a3a3a3 !important;
+}
+
+a {
+  color: var(--rex-red-light) !important;
+}
+
+a:hover {
+  color: var(--rex-red) !important;
+}
+
+/* Header / nav */
+header,
+.header,
+.site-header,
+.navbar,
+.nav,
+.navigation,
+.top-bar {
+  background: #0a0a0a !important;
+  border-bottom: 1px solid rgba(220, 38, 38, 0.35) !important;
+}
+
+.navbar a,
+.nav a,
+.navigation a,
+.header a {
+  color: var(--rex-text) !important;
+}
+
+.navbar a:hover,
+.nav a:hover,
+.navigation a:hover,
+.header a:hover,
+.navbar .active a,
+.nav .active a {
+  color: var(--rex-red-light) !important;
+}
+
+/* Cards / packages (category pages like /category/ranks) */
+.package,
+.product,
+.card,
+.panel,
+.modal-content,
+.basket,
+.checkout-panel,
+.store-product,
+.category-package {
+  background: var(--rex-card) !important;
+  border: 1px solid var(--rex-border) !important;
+  border-radius: var(--rex-radius) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
+.package:hover,
+.product:hover,
+.card:hover,
+.store-product:hover {
+  background: var(--rex-card-hover) !important;
+  border-color: rgba(220, 38, 38, 0.35) !important;
+}
+
+.package-name,
+.product-name,
+.package-title,
+.product-title {
+  color: var(--rex-text) !important;
+  font-weight: 700 !important;
+}
+
+.package-price,
+.product-price,
+.price {
+  color: var(--rex-red-light) !important;
+  font-weight: 700 !important;
+}
+
+/* Buttons */
+.btn,
+.button,
+.btn-primary,
+.button-primary,
+.add-to-basket,
+.purchase,
+.checkout-button,
+.btn-success {
+  background: var(--rex-red) !important;
+  border: 1px solid var(--rex-red) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: background 0.2s, border-color 0.2s !important;
+}
+
+.btn:hover,
+.button:hover,
+.btn-primary:hover,
+.button-primary:hover,
+.add-to-basket:hover,
+.purchase:hover,
+.checkout-button:hover,
+.btn-success:hover {
+  background: var(--rex-red-light) !important;
+  border-color: var(--rex-red-light) !important;
+  color: #fff !important;
+}
+
+.btn-secondary,
+.button-secondary {
+  background: #262626 !important;
+  border: 1px solid var(--rex-border) !important;
+  color: var(--rex-text) !important;
+}
+
+/* Sidebar */
+.sidebar,
+.store-sidebar,
+aside {
+  background: var(--rex-card) !important;
+  border: 1px solid rgba(220, 38, 38, 0.35) !important;
+  border-radius: var(--rex-radius) !important;
+}
+
+/* Footer */
+footer,
+.site-footer,
+.footer {
+  background: #0a0a0a !important;
+  border-top: 1px solid var(--rex-border) !important;
+  color: var(--rex-muted) !important;
+}
+
+/* Forms / inputs */
+input,
+select,
+textarea,
+.form-control {
+  background: #262626 !important;
+  border: 1px solid var(--rex-border) !important;
+  color: var(--rex-text) !important;
+  border-radius: 8px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--rex-red) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--rex-red-dim) !important;
+}
+
+/* Basket / checkout */
+.basket-header,
+.checkout-header,
+.modal-header {
+  background: var(--rex-card) !important;
+  border-bottom: 1px solid var(--rex-border) !important;
+}
+
+.basket-item,
+.checkout-item {
+  border-bottom: 1px solid var(--rex-border) !important;
+}
+
+/* Category page hero area */
+.category-header,
+.page-header,
+.store-banner {
+  background: linear-gradient(160deg, var(--rex-red-dim), var(--rex-card)) !important;
+  border: 1px solid rgba(220, 38, 38, 0.35) !important;
+  border-radius: var(--rex-radius) !important;
+}
+
+/* Sale / notice banners */
+.alert,
+.notice,
+.banner,
+.sale-banner {
+  background: var(--rex-red-dim) !important;
+  border: 1px solid rgba(220, 38, 38, 0.35) !important;
+  color: var(--rex-text) !important;
+}
+
+/* ============================================================
+   LAYOUT — sidebar up + category icons in main content
+   Paste AFTER activating theme. If a rule misses, inspect the
+   element in Chrome (F12) and swap in the class Tebex uses.
+   ============================================================ */
+
+/* GREEN: pull left sidebar up to align with main content */
+.site-content,
+.store-body,
+.store-container,
+.container.content,
+.main-container {
+  align-items: flex-start !important;
+}
+
+aside,
+.sidebar,
+.store-sidebar,
+.col-sidebar,
+.sidebar-panel {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  align-self: flex-start !important;
+}
+
+/* YELLOW: hide default homepage category row (white box icons) */
+.store-categories,
+.home-categories,
+.category-list-horizontal,
+.categories-header,
+.header-categories,
+.navigation-categories,
+.store-home-categories,
+.site-index-categories,
+.store-category-buttons,
+.nav-categories,
+.store-home-nav,
+.site-navigation-horizontal,
+.category-jumper,
+.store-front-categories,
+.site-categories,
+.categories-nav,
+.site-content .category-grid,
+.site-content > .container > .row.categories,
+.site-content > .categories,
+header ~ .container .categories,
+.site-content .category-list:not(.rex-store-home) {
+  display: none !important;
+}
+
+/* Hide Exo index category tile row (3 box icons under logo) */
+.site-content > .container > .row:first-child:not(:has(.rex-store-home)),
+.site-content .store-categories-row,
+.site-content .navigation-horizontal,
+.panel-body + .category-list {
+  display: none !important;
+}
+
+/* BLUE: Rex category buttons inside Home page content */
+.rex-store-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rex-store-home a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1.25rem 1rem;
+  background: #141414 !important;
+  border: 1px solid rgba(220, 38, 38, 0.35) !important;
+  border-radius: 12px !important;
+  color: #f5f5f5 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: background 0.2s, border-color 0.2s !important;
+}
+
+.rex-store-home a:hover {
+  background: #1a1a1a !important;
+  border-color: #dc2626 !important;
+  color: #ef4444 !important;
+}
+
+.rex-store-home .rex-cat-label {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+}
+
+.rex-store-home .rex-cat-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rex-store-home .rex-cat-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
+.rex-home-copy {
+  color: #a3a3a3 !important;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}

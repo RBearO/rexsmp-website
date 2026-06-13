@@ -45,7 +45,7 @@ if (-not (Test-Path ".git")) {
     git branch -M main
 }
 
-git add index.html css js img favicon.svg CNAME .nojekyll robots.txt sitemap.xml .well-known deploy.ps1 protect-cloudflare.ps1 PROTECT-NOW.bat DEPLOY-NOW.bat TEBEX-PACKAGES.txt
+git add index.html css js img favicon.svg CNAME .nojekyll robots.txt sitemap.xml .well-known deploy.ps1 protect-cloudflare.ps1 PROTECT-NOW.bat DEPLOY-NOW.bat TEBEX-PACKAGES.txt tebex-rexsmp-theme.css tebex-home-paste-this.html TEBEX-THEME-SETUP.txt TEBEX-FIX-HOME-PAGE.txt
 $pending = git status --porcelain
 if ($pending) {
     git -c "user.name=$owner" -c "user.email=$gitEmail" commit -m "Rex SMP website for $Domain"
