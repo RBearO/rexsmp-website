@@ -356,10 +356,10 @@ header ~ .container .categories,
 }
 
 .rex-store-home .rex-cat-icon {
-  width: 120px !important;
-  height: 120px !important;
-  min-width: 120px !important;
-  min-height: 120px !important;
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px !important;
+  min-height: 140px !important;
   border-radius: 8px;
   background: transparent !important;
   display: flex;

@@ -634,19 +634,21 @@ body {
 }
 
 .store-card-icon {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 0.75rem;
+  width: 192px;
+  height: 192px;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .store-card-icon img {
-  width: 96px;
-  height: 96px;
+  width: 192px;
+  height: 192px;
   object-fit: contain;
-  image-rendering: pixelated;
+  object-position: center;
+  image-rendering: auto;
   display: block;
 }
 
