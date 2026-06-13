@@ -614,23 +614,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.store-ip-card {
-  margin: 0 auto 2rem;
-}
-
-a.store-buy-btn {
-  text-decoration: none;
-}
-
-a.store-buy-btn:hover {
-  color: var(--grey-100);
-}
-
-.store-grid-keys {
-  max-width: 360px;
-  margin: 0 auto;
-}
-
 .store-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
