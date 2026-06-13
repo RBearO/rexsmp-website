@@ -322,7 +322,7 @@ header ~ .container .categories,
 /* BLUE: Rex category buttons inside Home page content */
 .rex-store-home {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.25rem;
   margin-bottom: 1.5rem;
 }
@@ -356,10 +356,10 @@ header ~ .container .categories,
 }
 
 .rex-store-home .rex-cat-icon {
-  width: 200px !important;
-  height: 200px !important;
-  min-width: 200px !important;
-  min-height: 200px !important;
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px !important;
+  min-height: 140px !important;
   border-radius: 8px;
   background: transparent !important;
   display: flex;
@@ -371,12 +371,12 @@ header ~ .container .categories,
 
 .rex-store-home .rex-cat-img,
 .rex-store-home img.rex-cat-img {
-  width: 200px !important;
-  height: 200px !important;
-  min-width: 200px !important;
-  min-height: 200px !important;
-  max-width: 200px !important;
-  max-height: 200px !important;
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px !important;
+  min-height: 140px !important;
+  max-width: 140px !important;
+  max-height: 140px !important;
   object-fit: contain !important;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -385,6 +385,7 @@ header ~ .container .categories,
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.85));
 }
 
 .rex-home-copy {
