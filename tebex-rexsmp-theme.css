@@ -322,7 +322,7 @@ header ~ .container .categories,
 /* BLUE: Rex category buttons inside Home page content */
 .rex-store-home {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -356,8 +356,8 @@ header ~ .container .categories,
 }
 
 .rex-store-home .rex-cat-icon {
-  width: 64px;
-  height: 64px;
+  width: 114px;
+  height: 114px;
   border-radius: 8px;
   background: transparent !important;
   display: flex;
@@ -367,11 +367,14 @@ header ~ .container .categories,
 }
 
 .rex-store-home .rex-cat-img {
-  width: 64px;
-  height: 64px;
+  width: 114px;
+  height: 114px;
+  max-width: 114px;
+  max-height: 114px;
   object-fit: contain;
-  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  image-rendering: pixelated;
   display: block;
   background: transparent !important;
   border: none !important;
