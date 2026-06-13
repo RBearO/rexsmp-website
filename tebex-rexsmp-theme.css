@@ -385,7 +385,6 @@ header ~ .container .categories,
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.85));
 }
 
 .rex-home-copy {
