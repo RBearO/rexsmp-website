@@ -356,31 +356,30 @@ header ~ .container .categories,
 }
 
 .rex-store-home .rex-cat-icon {
-  width: 140px !important;
-  height: 140px !important;
-  min-width: 140px !important;
-  min-height: 140px !important;
+  width: 120px !important;
+  height: 120px !important;
+  min-width: 120px !important;
+  min-height: 120px !important;
   border-radius: 8px;
   background: transparent !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden;
   flex-shrink: 0;
 }
 
 .rex-store-home .rex-cat-img,
 .rex-store-home img.rex-cat-img {
-  width: 140px !important;
-  height: 140px !important;
-  min-width: 140px !important;
-  min-height: 140px !important;
-  max-width: 140px !important;
-  max-height: 140px !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   object-fit: contain !important;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
+  object-position: center center !important;
+  image-rendering: auto !important;
   display: block !important;
   background: transparent !important;
   border: none !important;
