@@ -360,12 +360,12 @@ header ~ .container .categories,
   height: 140px !important;
   min-width: 140px !important;
   min-height: 140px !important;
-  border-radius: 8px;
-  background: transparent !important;
+  border-radius: 0;
+  background: #141414 !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden;
   flex-shrink: 0;
 }
 
@@ -377,14 +377,14 @@ header ~ .container .categories,
   min-height: 140px !important;
   max-width: 140px !important;
   max-height: 140px !important;
-  object-fit: contain !important;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
+  object-fit: none !important;
+  image-rendering: auto !important;
   display: block !important;
-  background: transparent !important;
+  background: #141414 !important;
   border: none !important;
+  outline: none !important;
   box-shadow: none !important;
+  filter: none !important;
 }
 
 .rex-home-copy {
